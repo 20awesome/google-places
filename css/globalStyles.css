@@ -1,7 +1,3 @@
-html {
-/*  background: #fff url(../images/site/html.jpg) repeat;
-*/
-}
 
 body {
   font-family: Georgia, serif;
@@ -63,58 +59,18 @@ body {
 }
 
 
-.site {
-/*  background-color: #fff;
-  border: 1px solid red;
-  width: 960px;
-  min-height: 630px;
-  margin: 20px auto 0;*/
-}
-
-.logo {
-/*  padding: 5px;*/
-}
-
-.image {
-/*  border: 3px solid purple;
-  padding: 2px;*/
-}
-
-.flowerListItem {
-/*  display: inline-block;
-  margin: 0 10px;
-  list-style-type: none;*/
-}
-
 .right{
 float:right;
- height: 100%;
-  overflow-y: scroll;
+height: 100%;
+overflow-y: scroll;
 width: 25%;
-
 }
-      #target {
-        width: 345px;
-      }
-.flowerInfo {
-/*  list-style-type: none;
-  text-align: left;
-  margin-bottom: 5px;
-*/}
+    
 
-#copy {
-/*  text-align: center;
-  color: red;
-  font-size: 22px;
-  padding: 5px;
-  margin: 10px auto 0;
-  width: 600px;*/
+#target {
+width: 345px;
 }
 
 .hide-by-default {
 display: none;
-}
-
-.bgColorImage {
-  background-color: red !important;
 }

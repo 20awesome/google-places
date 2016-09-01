@@ -8,41 +8,35 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
 
-
 </head>
 <body>
 
+
+
 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 <div id="map"> </div>
-
-
-
-
 <div class=" right">
   <h4 class="list-group-item-heading">Места</h4>
     <div id="allPlaces" class="list-group">
-       <script id="placeElement" type="text/template">
-          <a href="#" class="list-group-item "  >
+       <script id="placeElement" type="text/template" >
+       <div class="formarkerPOP">
+          <a href="#" class="list-group-item " >
             <h4 class="list-group-item-heading">Название:  <%= name %></h4>
             <p class=" list-group-item-text">Адрес: <%= formatted_address %></p>
             <p class=" list-group-item-text" >Rating: <%= rating %></p>
-  <div id="somnewid" class="hide-by-default list-group-item-text">
-<ul>
-  <li>Website:<%= website %></li>
-  <li>UrlOnMAp: <%= url %></li>
-  <li>Open now: <%= open_now %></li>
-  <li>Type: 
-<p><% _.each(types, function(type) { %>
- <%= type %>   
-          <% }); %></p>
+            <div id="somnewid" class="hide-by-default list-group-item-text">
+              <ul>
+                <li>Website:<%= website %></li>
+                <li>UrlOnMAp: <%= url %></li>
+                <li>Open now: <%= open_now %></li>
+                <li>Type: 
+                  <p><% _.each(types, function(type) { %> <%= type %> <% }); %></p>
+                </li>
+              </ul>
+            </div>
+          </a>
 
-  </li>
-
-</ul>
-  </div>
-
- 
-           </a>
+          </div>
         </script>
     </div>
 </div>
@@ -55,11 +49,7 @@
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
 <script type="text/javascript" src="node_modules/backbone/backbone.js"></script>
-<script type="text/javascript" src="node_modules/requirejs/require.js"></script>
-
-
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTYiB0fCl7XsUaS-oxVkwyr17JuGg9BZU&libraries=places"></script>
-
 <script type="text/javascript" src="build/js/build.js"></script>
 
 </body>
