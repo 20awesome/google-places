@@ -72,7 +72,7 @@ var SinglePlaceView = Backbone.View.extend({
 
 	events: {
 		'mouseenter .formarkerPOP': 'addBgColor',
-		'mouseleave .formarkerPOP': 'removeBgColor',
+		'mouseleave .formarkerPOP': 'addBgColor',
 
 		// 		'mouseenter .formarkerPOP': () => {
 		// 	console.log("mouseover")
@@ -99,21 +99,21 @@ var SinglePlaceView = Backbone.View.extend({
 		markersToDisableTogle.push(marker);
 	},
 
-	removeBgColor: function() {
-		markersToDisableTogle.forEach(function(marker) {
-			marker.setAnimation(null);
-		});
-		marker = _.findWhere(markerstoclear, {
-			title: this.model.get('name')
-		});
-		if (marker.getAnimation() !== null) {
-			marker.setAnimation(null);
-		} else {
-			marker.setAnimation(google.maps.Animation.BOUNCE);
-		}
-		markersToDisableTogle.push(marker);
+	// removeBgColor: function() {
+	// 	markersToDisableTogle.forEach(function(marker) {
+	// 		marker.setAnimation(null);
+	// 	});
+	// 	marker = _.findWhere(markerstoclear, {
+	// 		title: this.model.get('name')
+	// 	});
+	// 	if (marker.getAnimation() !== null) {
+	// 		marker.setAnimation(null);
+	// 	} else {
+	// 		marker.setAnimation(google.maps.Animation.BOUNCE);
+	// 	}
+	// 	markersToDisableTogle.push(marker);
 
-	},
+	// },
 
 	toggleMarker: function() {
 		this.$(".hide-by-default").toggle();
