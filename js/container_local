@@ -1,0 +1,20 @@
+<div class="container" style="margin: -16px auto auto;"><h3>Send message to speaker</h3><form novalidate="novalidate" class="formtastic contact" id="new_contact" action="/showcases/presentain-tutorial-26-aug-2016-05-48/contacts" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><ul class="fields-list"><li class="string input required stringish" id="contact_name_input"><input placeholder="Name*" id="contact_name" type="text" name="contact[name]">
+
+</li><li class="string input required stringish" id="contact_email_input"><input placeholder="Email*" id="contact_email" type="email" name="contact[email]">
+
+</li><fieldset class="inputs second-info"><ol><li class="string input optional stringish" id="contact_phone_number_input"><input placeholder="Phone Number" id="contact_phone_number" type="text" name="contact[phone_number]">
+
+</li></ol></fieldset><li class="string input optional stringish" id="contact_company_name_input"><input placeholder="Company Name" id="contact_company_name" type="text" name="contact[company_name]">
+
+</li><li class="select input optional" id="contact_contact_purpose_input"><label for="contact_contact_purpose" class="label">Interested in</label><select name="contact[contact_purpose]" id="contact_contact_purpose"><option value="">Please select</option>
+<option value="Want more info">Want more info</option>
+<option value="Interested in buying">Interested in buying</option>
+<option value="Want to offer services">Want to offer services</option>
+<option value="Other">Other</option></select>
+
+</li><li class="string input optional stringish" id="contact_description_input"><input placeholder="Comment" id="contact_description" max-length="160" type="text" name="contact[description]">
+
+</li></ul><ul class="btn-list"><li><input class="close" type="button" value="Cancel"></li><li><input type="submit" name="commit" value="Send" class="send"></li></ul></form></div>
+
+
+
